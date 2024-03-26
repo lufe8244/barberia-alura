@@ -1,0 +1,303 @@
+/* Estilos generales */
+
+::selection {
+    background: #adbeff;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333; /* Cambio de color predeterminado para un mejor contraste */
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+strong {
+    color: #001f8d;
+}
+
+/* Estilos de encabezados */
+
+h2, h3 {
+    color: #001f8d;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Estilos de la barra de navegación */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(14, 29, 52, 0.63); /* Cambio de color de fondo */
+    border-bottom: 1px solid #444;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px; /* Tamaño de fuente ajustado */
+}
+
+nav ul li a:hover {
+    color: #c3d0ff;
+    border-bottom: 3px solid #c3d0ff;
+}
+
+/* Contenedor principal */
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+/* Estilos para la sección "Acerca" */
+
+.acerca {
+    background: #ccc; /* Cambio de color de fondo */
+    padding: 20px;
+}
+
+.title-center {
+    text-align: center;
+}
+
+/* Estilos para los párrafos */
+
+p {
+    text-align: justify; /* Cambio a justificar el texto */
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#mision {
+    font-size: 20px;
+}
+
+/* Estilos para sección "Diferenciales" */
+
+.diferenciales {
+    background: #fff;
+    padding: 30px;
+}
+
+.lista-difer,
+.imgDif {
+    width: 40%; /* Ajuste de anchura */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.imgDif {
+    width: 100%; /* Ajuste de anchura para que ocupe todo el espacio */
+    transition: opacity 400ms; /* Corrección de la propiedad de transición */
+}
+
+.imgDif:hover {
+    opacity: 0.8; /* Cambio de opacidad al hacer hover */
+}
+
+.items {
+    font-style: italic;
+    line-height: 1.5; /* Ajuste de espaciado entre líneas */
+}
+
+.items::before {
+    content: "★";
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+
+/* Estilos para la sección "Productos" */
+
+.productos {
+    width: 100%; /* Ajuste de anchura */
+    max-width: 940px; /* Ajuste de máximo ancho */
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+
+.productos li:hover {
+    border-color: #001973;
+}
+
+.productos li:active {
+    border-color: #001973;
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2 {
+    font-size: 33px;
+    color: #001973;
+}
+
+.prod-descrip {
+    font-size: 18px;
+}
+
+.prod-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilos para el formulario */
+
+.form {
+    background: #f5f6fa;
+    width: 70%;
+    margin: 30px auto;
+    padding: 20px;
+    line-height: 1.5;
+    color: #0e1d34;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 40%;
+    border: 1px solid #0e1d34;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 20%;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #0e1d34;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: #001f8d;
+    transform: scale(1.2);
+}
+
+/* Estilos para la tabla */
+
+table {
+    margin: 40px 40px;
+}
+
+thead {
+    background: #0e1d34;
+    color: #fff;
+}
+
+td,
+th {
+    border: 1px solid #07133d;
+    padding: 15px;
+}
+
+/* Estilos para dispositivos móviles */
+
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border-bottom: 1px solid #444;
+    }
+
+    nav .logo {
+        width: 8%;
+        float: left;
+    }
+
+    nav ul {
+        list-style: none;
+        float: right;
+        margin: 0;
+        display: flex;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0;
+        margin-left: 25px;
+        font-size: 15px;
+    }
+
+    .cont-utens {
+        width: 90%;
+        display: grid;
+    }
+
+    .mapa {
+        padding: 20px;
+    }
+
+    .cont-utens img {
+        width: 95%;
+        display: grid;
+    }
+
+    .imgDif {
+        width: 43%;
+    }
+}

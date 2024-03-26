@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Barbería Alura</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo-blanco.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div class="links">
+                <img src="img/logo-blanco.png" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Contáctate con Barbería Alura</h1>
+        </div>
+    </header>
+    <img class="banner" src="banner/banner.jpg">
+    <main>
+        <!--Formulario-->
+        <section class="form">
+            <form>
+                <!--Label=Titulo del input-->
+                <label for="nomapellido">Nombre y Apellido:</label> 
+                <input type="text" id="nomapellido" class="input-padron" required> <!--Tipo de input y uso de id-->
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" class="input-padron" placeholder="email@dominio.com" required>   
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" class="input-padron" placeholder="+51 987 654 321" required>
+                <!--Textarea de mensaje-->
+                <label for="msm">Mensaje</label>
+                <textarea name="mensaje" id="msm" cols="70" rows="10" placeholder="Mensaje" required></textarea>
+                
+                <fieldset> <!--agrupa los items-->
+                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    
+                    <label for="radio-tlf"><input type="radio" name="contacto" value="telefono" id="radio-tlf">Teléfono</label>
+                    
+                    <label for="radio-wts"><input type="radio" name="contacto" value="whatsapp" checked id="radio-wts">WhatsApp</label>
+    </fieldset>
+    
+    <fieldset>
+        <legend>¿En cual horario prefiere ser atendido?</legend>
+        <select>
+            <option value="">Mañana</option>
+        <option value="">Tarde</option>
+        <option value="">Noche</option>
+    </select>
+</fieldset>
+
+<label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería Alura?</label>
+<input type="submit" class="enviar" value="Enviar Formulario" > <!--Boton de enviado-->
+
+<!--Tabla-->
+<table>
+    <thead>
+        <tr><!--filas, encabezado-->
+            <th>Días</th>
+            <th>Horario</th>
+        </tr>
+    </thead> 
+    <tbody>       
+        <tr><!--filas-->
+            <td>Lunes</td>
+            <td>08h - 20h</td>
+        </tr>
+        <tr><!--filas-->
+            <td>Miercoles</td>
+            <td>08h - 20h</td>
+        </tr>
+        <tr><!--filas-->
+            <td>Viernes</td>
+            <td>08h - 20h</td>
+        </tr>
+    </tbody>
+</table>
+</form>
+</section>
+</main>
+<!--Pie de pagina-->
+<footer>
+    <img src="img/logo-blanco.png" class="icon">
+    <p class="copyright">&copy; Copyright Barbería Alura 2022 - Desarrollado por <a href="https://github.com/AnabelHuancaM" target="_blank">Anabel Huanca</a></p>
+</footer>
+</body>
+</html>
